@@ -1,0 +1,94 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 140px;
+}
+
+/* Card Container for row and responsiveness */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;              /* Gap between cards */
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Individual Card Styling */
+.card {
+  width: 320px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  background: #fff;
+  transition: transform 0.3s ease;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px 18px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-info {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #555;
+}
+
+.card-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #24a148;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.card-btn:hover {
+  background: #1b7a36;
+}
+
+/* 📱 Responsive Breakpoints */
+
+/* Tablet (2 Cards Per Row) */
+@media (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+
+/* Mobile (1 Card Per Row) */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
