@@ -34,7 +34,7 @@ function App() {
 
      {user && user.map((item , index) => {
         return<div className="card" key={index}>
-      <img src={item.url} className="card-img" alt={item.title} />
+      <img src={item.thumbnailUrl} className="card-img" alt={item.title} />
       <div className="card-content">
         <h3 className="card-title">{item.title}</h3>
         <p className="card-info"><strong>Album ID:</strong> {item.albumId}</p>
